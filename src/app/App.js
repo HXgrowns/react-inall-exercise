@@ -1,16 +1,32 @@
 import React, {Component} from 'react';
-import './app.less';
-import {Route, BrowserRouter} from "react-router-dom";
-import Home from "./Home";
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  NavLink
+} from "react-router-dom";
+import './app.scss';
+import Home from "../components/Home";
+import Calculator from "../components/Calculator";
+import Timer from "../components/Timer";
 
 class App extends Component {
   render() {
     return (
-      <div className="app">
-        <BrowserRouter>
+      <BrowserRouter className="app">
+        <header className="header">
+          <nav className="nav">
+            <NavLink activeClassName="active-link" exact className="link" to="/">HOME</NavLink>
+            <NavLink activeClassName="active-link" className="link" to="/calculator">在线计算器</NavLink>
+            <NavLink activeClassName="active-link" className="link" to="/timer">在线倒计时器</NavLink>
+          </nav>
+        </header>
+        <Switch>
           <Route exact path='/' component={Home}/>
-        </BrowserRouter>
-      </div>
+          <Route exact path='/calculator' component={Calculator}/>
+          <Route exact path='/timer' component={Timer}/>
+        </Switch>
+      </BrowserRouter>
     );
   }
 }

@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  background: #00AEED;
+}
+
+.nav {
+  width: 500px;
+  height: 60px;
+}
+
+.link {
+  margin-left: 40px;
+  height: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.active-link {
+  color: red;
+}
