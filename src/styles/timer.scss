@@ -1,0 +1,63 @@
+.timer {
+    width: 800px;
+    height: 460px;
+    background-color: #F1F1F1;
+    margin: auto;
+}
+
+.timer-title {
+    margin: 0;
+    width: 800px;
+    text-align: center;
+    line-height: 140px;
+    font-size: 40px;
+}
+
+.timer-border {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+    text-align: center;
+}
+
+.timer-layout {
+    width: 350px;
+    font-size: 20px;
+}
+
+.timer-top {
+    width: 350px;
+}
+
+.timer-top > span {
+    margin-right: 10px;
+}
+
+.timer-top > input {
+    width: 250px;
+    height: 30px;
+}
+
+.timer-bottom {
+    margin-top: 40px;
+    width: 350px;
+    height: 40px;
+    background-color: #00AEED;
+    border: none;
+}
+
+.timer-show > input {
+    width: 350px;
+    height: 100px;
+    font-size: 50px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.timer-back-home {
+    display: block;
+    margin-left: 23px;
+    margin-top: 50px;
+}
