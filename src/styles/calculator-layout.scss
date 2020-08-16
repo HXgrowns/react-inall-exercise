@@ -1,0 +1,32 @@
+.calc-layout {
+    margin: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(6, 16.67%);
+    grid-gap: 15px 10px;
+}
+
+.input {
+    text-align: right;
+}
+
+.calc-layout > button {
+    border: none;
+}
+
+.op {
+    background-color: #FFFF81;
+}
+
+.num {
+    background-color: #FCC04E;
+}
+
+.clear {
+    background-color: #FFBEFE;
+}
+
+.eq {
+    background-color: #FF8081;
+}
