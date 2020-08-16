@@ -11,6 +11,53 @@
 
 .calc {
     margin: auto;
-    width: 600px;
-    height: 800px;
+    width: 320px;
+}
+
+.calc-border {
+    margin: auto;
+    // padding: 30px 10px;
+    width: 320px;
+    height: 370px;
+    background-color: #EAEBFF;
+    border: 1px solid #919095;
+}
+
+.calc-layout {
+    margin: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(6, 16.67%);
+    grid-gap: 15px 10px;
+    // height: 500px;
+}
+
+.input {
+    grid-column: 1 / span 3;
+}
+
+.back-home {
+    display: block;
+    line-height: 3.7em;
+}
+
+.calc-layout > button {
+    border: none;
+}
+
+.op {
+    background-color: #FFFF81;
+}
+
+.num {
+    background-color: #FCC04E;
+}
+
+.clear {
+    background-color: #FFBEFE;
+}
+
+.eq {
+    background-color: #FF8081;
 }
